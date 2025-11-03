@@ -38,7 +38,18 @@ Route::get('/product', function () {
 });
 
 Route::get('/tambah', function () {
-    return view('tambah');
+    $products_type = [
+        [
+            "jenis" => "Alat Tulis"
+        ],
+        [
+            "jenis" => "Elektronik"
+        ],
+        [
+            "jenis" => "Sembako"
+        ],
+    ];
+    return view('tambah', compact('products_type'));
 });
 
 //     return view('about');
