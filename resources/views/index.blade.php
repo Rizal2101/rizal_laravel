@@ -27,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="/product">Product</a>
           </li>
                   </ul>
         <form class="d-flex mt-3" role="search">

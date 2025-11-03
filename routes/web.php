@@ -8,17 +8,21 @@ Route::get('/', function () {
      return view('index');
 });
 
-Route::get('/about', function () {
-    // return view('welcome');
-    return view('about');
+Route::get('product', function () {
+        return view('product');
 });
 
-// Route::get('/mahasiswa', function () {
-//     return view('mahasiswa');
+// Route::get('/about', function () {
+//     // return view('welcome');
+//     return view('about');
 // });
-Route::resource('mahasiswa', MahasiswaController::class);
 
-Route::get('/profile', function () {
-    $nama = 'Rizal Amri Khoirul Hakim';
-    return view('profile')->with('nama', $nama);
-});
+// // Route::get('/mahasiswa', function () {
+// //     return view('mahasiswa');
+// // });
+// Route::resource('mahasiswa', MahasiswaController::class);
+
+// Route::get('/profile', function () {
+//     $nama = 'Rizal Amri Khoirul Hakim';
+//     return view('profile')->with('nama', $nama);
+// });
